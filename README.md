@@ -15,28 +15,19 @@ Now, we know what you may be thinking: “That’s obvious. It gets hotter.” B
 - Push your changes to GitHub.
 - Add a .gitignore File
 
-### For this assignment, you will need to add a .gitignore file to your repo. Doing so will prevent the api_keys.py file that contains your API key from being shared with the public. If you skip this step, anyone using GitHub could copy and use your API key, and you may incur charges as a result.
+## A few things to remember: 
+- For this assignment, you will need to add a .gitignore file to your repo. Doing so will prevent the api_keys.py file that contains your API key from being shared with the public. If you skip this step, anyone using GitHub could copy and use your API key, and you may incur charges as a result.
+- To get stsrted, type git status in the command line to see a list of all the untracked files that you have created so far.
+- To add only the WeatherPy.ipynb file to GitHub, type git add WeatherPy.ipynb. Keep in mind that you would have to add each file individually when adding or updating a file. A more efficient solution is to add all of the files that you don't want to track to the .gitignore file.
 
-To get stsrted, type git status in the command line to see a list of all the untracked files that you have created so far.
+## Before adding your files to GitHub, add api_keys.py to the .gitignore file by following these steps:
+- Open your python-api-challenge GitHub folder in VS Code.
+- Open the .gitignore file and type the following code on the first line: Adding config.py file. api_keys.py
+- In the command line, type git status and press Enter. The output should indicate that the .gitignore file has been modified and the WeatherPy.ipynb file is untracked.
+- Use git add, git commit, and git push to commit the modifications to .gitignore and the WeatherPy.ipynb file to GitHub.
+- On GitHub, the only new file you should find is the WeatherPy.ipynb file.
 
-To add only the WeatherPy.ipynb file to GitHub, type git add WeatherPy.ipynb. Keep in mind that you would have to add each file individually when adding or updating a file. A more efficient solution is to add all of the files that you don't want to track to the .gitignore file.
-
-Before adding your files to GitHub, add api_keys.py to the .gitignore file by following these steps:
-
-Open your python-api-challenge GitHub folder in VS Code.
-
-Open the .gitignore file and type the following code on the first line:
-
-Adding config.py file.
-api_keys.py
-
-In the command line, type git status and press Enter. The output should indicate that the .gitignore file has been modified and the WeatherPy.ipynb file is untracked.
-
-Use git add, git commit, and git push to commit the modifications to .gitignore and the WeatherPy.ipynb file to GitHub.
-
-On GitHub, the only new file you should find is the WeatherPy.ipynb file.
-
-Files
+## Files
 Download the following files to help you get started:
 
 Module 6 Challenge filesLinks to an external site.
@@ -67,7 +58,6 @@ Next, create a series of scatter plots. Be sure to include the linear regression
 Sample scatter plot with the linear regression line.
 
 You should create the following plots:
-
 - Northern Hemisphere: Temperature vs. Latitude
 - Southern Hemisphere: Temperature vs. Latitude
 - Northern Hemisphere: Humidity vs. Latitude
@@ -111,7 +101,7 @@ Add the hotel name and the country as additional information in the hover messag
 
 Hotel map
 
-Hints and Considerations
+## Hints and Considerations
 The city data that you generate is based on random coordinates and different query times, so your outputs will not be an exact match to the provided starter notebook.
 
 If you'd like a refresher on the geographic coordinate system, this siteLinks to an external site has great information.
@@ -151,12 +141,9 @@ Use the OpenWeatherMap API to retrieve weather data from the cities list generat
 - Linear regression scatter plot for Northern Hemisphere: Wind Speed (m/s) vs. Latitude (5 points)
 - Linear regression scatter plot for Southern Hemisphere: Wind Speed (m/s) vs. Latitude (5 points)
 
-The requirements for "Part 2: VacationPy" are the following (30 points)
-Create a map that displays a point for every city in the city_data_df DataFrame (5 points)
-
-Narrow down the city_data_df DataFrame to find your ideal weather condition (5 points)
-
-For each city in the hotel_df DataFrame, use the Geoapify API to find the first hotel located within 10,000 metres of your coordinates (10 points)
-
-Add the hotel name and the country as additional information in the hover message for each city in the map. (10 points)
+## The requirements for "Part 2: VacationPy" are the following (30 points)
+- Create a map that displays a point for every city in the city_data_df DataFrame (5 points)
+- Narrow down the city_data_df DataFrame to find your ideal weather condition (5 points)
+- For each city in the hotel_df DataFrame, use the Geoapify API to find the first hotel located within 10,000 metres of your coordinates (10 points)
+- Add the hotel name and the country as additional information in the hover message for each city in the map. (10 points)
 
